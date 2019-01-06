@@ -5,6 +5,7 @@ const packageFile = require("./package.json");
 var os = require("os");
 var hostname = os.hostname();
 
+
 module.exports = function(homebridge) {
     if(!isConfig(homebridge.user.configPath(), "accessories", "AirPollution")) {
         return;
